@@ -3,12 +3,15 @@
 <package format="3">
   <name>main_pkg</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>main pkg for autoDrone project</description>
   <maintainer email="msryu00@gmail.com">dding</maintainer>
-  <license>TODO: License declaration</license>
+  <license>MIT license</license>
+  <author email="msryu00@gmail.com">Ryu</author>
+  <author email="msryu00@gmail.com">Myeongseok Ryu</author>
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>
+  <depend>msg_interface</depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

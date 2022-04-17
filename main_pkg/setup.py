@@ -1,11 +1,11 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
 package_name = 'main_pkg'
 
 setup(
     name=package_name,
     version='0.0.0',
-    packages=[package_name],
+    packages=find_packages(exclude=['test']),
     data_files=[
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
@@ -13,13 +13,20 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
+    author='Myeongseok Ryu'
+    author_email='msryu00@gmail.com'
     maintainer='dding',
     maintainer_email='msryu00@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    classifiers=[
+        'Programming Language :: Python',
+        'Topic :: RL application'
+    ]
+    description='autoDrone based on RL with Hierarchy NN',
+    license='MIT License',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            
         ],
     },
 )
