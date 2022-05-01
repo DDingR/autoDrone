@@ -1,7 +1,0 @@
-# Constants
-
-# Request
-float32[] state
----
-# Response
-float32[] action
